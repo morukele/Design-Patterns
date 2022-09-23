@@ -2,6 +2,7 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/FantasyGame" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SimUDuck" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -12,6 +13,8 @@
       <list>
         <option value="$MODULE_DIR$/SimUDuck/Classes" />
         <option value="$MODULE_DIR$/SimUDuck/Interfaces" />
+        <option value="$MODULE_DIR$/FantasyGame/Classes" />
+        <option value="$MODULE_DIR$/FantasyGame/Interfaces" />
       </list>
     </option>
   </component>

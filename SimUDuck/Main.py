@@ -1,5 +1,6 @@
 from Classes.Ducks.MallardDuck import MallardDuck
 from Classes.Ducks.ModelDuck import ModelDuck
+from Classes.Devices.DuckCall import DuckCall
 from Classes.SuperClasses.Duck import Duck
 from Classes.Traits.FlyRocketPowered import FlyRocketPowered
 
@@ -13,6 +14,9 @@ def main():
     model.performFly()
     model.setFlyBehaviour(FlyRocketPowered())
     model.performFly()
+
+    duck_call = DuckCall()
+    duck_call.quack()
 
 
 if __name__ == "__main__":
