@@ -4,6 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/FantasyGame" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SimUDuck" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/WeatherORama" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -15,6 +16,8 @@
         <option value="$MODULE_DIR$/SimUDuck/Interfaces" />
         <option value="$MODULE_DIR$/FantasyGame/Classes" />
         <option value="$MODULE_DIR$/FantasyGame/Interfaces" />
+        <option value="$MODULE_DIR$/WeatherORama/Interfaces" />
+        <option value="$MODULE_DIR$/WeatherORama/Classes" />
       </list>
     </option>
   </component>
