@@ -12,7 +12,8 @@ class StatisticsDisplay(Observer, DisplayElement):
         self.weatherData = weatherData
         self.weatherData.registerObserver(self)
 
-    def update(self, temp: float, humidity: float, pressure: float):
+    def update(self):
+        temp = self.weatherData.getTemperature()
         self.tempSum += temp
         self.numReadings += 1
 

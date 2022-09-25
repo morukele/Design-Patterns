@@ -10,9 +10,9 @@ class CurrentConditionsDisplay(Observer, DisplayElement):
         self.weatherData = weatherData
         self.weatherData.registerObserver(self)
 
-    def update(self, temp: float, humidity: float, pressure: float):
-        self.temperature = temp
-        self.humidity = humidity
+    def update(self):
+        self.temperature = self.weatherData.getTemperature()
+        self.humidity = self.weatherData.getHumidity()
         self.display()
 
     def display(self):

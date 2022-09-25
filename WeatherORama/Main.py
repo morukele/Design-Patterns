@@ -2,6 +2,7 @@ from Classes.WeatherData import WeatherData
 from Classes.CurrentConditionsDisplay import CurrentConditionsDisplay
 from Classes.ForecastDisplay import ForcastDisplay
 from Classes.StatisticsDisplay import StatisticsDisplay
+from Classes.HeatIndexDisplay import HeatIndexDisplay
 
 
 def main():
@@ -10,6 +11,7 @@ def main():
     currentDisplay: CurrentConditionsDisplay = CurrentConditionsDisplay(weatherData)
     statisticsDisplay: StatisticsDisplay = StatisticsDisplay(weatherData)
     forecastDisplay: ForcastDisplay = ForcastDisplay(weatherData)
+    heatIndexDisplay: HeatIndexDisplay = HeatIndexDisplay(weatherData)
 
     weatherData.setMeasurements(80, 65, 30.4)
     weatherData.setMeasurements(82, 70, 29.2)
