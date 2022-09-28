@@ -3,7 +3,7 @@
 # @Filename:    Soy
 # @Author:      Oghenemarho ORUKELE
 # @Time:        27/09/2022 16:00
-from Classes.Abstract.Beverage import Beverage
+from Classes.Abstract.Beverage import Beverage, Size
 from Classes.Abstract.CondimentDecorator import CondimentDecorator
 
 
@@ -15,4 +15,11 @@ class Soy(CondimentDecorator):
         return self.beverage.getDescription() + ", Soy"
 
     def cost(self) -> float:
-        return self.beverage.cost() + .15
+        if self.beverage.getSize() == Size.TALL:
+            return self.beverage.cost() + .10
+
+        if self.beverage.getSize() == Size.GRANDE:
+            return self.beverage.cost() + .15
+
+        if self.beverage.getSize() == Size.VENTI:
+            return self.beverage.cost() + .20

@@ -9,7 +9,7 @@ from Classes.Condiment.Mocha import Mocha
 from Classes.Coffee.HouseBlend import HouseBlend
 from Classes.Condiment.Soy import Soy
 from Classes.Condiment.Whip import Whip
-from Classes.Condiment.SteamedMilk import SteamedMilk
+from Classes.Abstract.Beverage import Size
 
 
 def main():
@@ -23,6 +23,7 @@ def main():
     print(beverage2.getDescription()+ " $" + str(beverage2.cost()))
 
     beverage3 = HouseBlend()
+    beverage3.setSize(Size.GRANDE)
     beverage3 = Soy(beverage3)
     beverage3 = Mocha(beverage3)
     beverage3 = Whip(beverage3)
