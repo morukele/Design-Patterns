@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/SimUDuck" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/WeatherORama" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StarBuzz" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PizzaStore" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
