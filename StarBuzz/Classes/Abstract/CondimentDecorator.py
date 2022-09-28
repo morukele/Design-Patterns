@@ -4,7 +4,7 @@
 # @Author:      Oghenemarho ORUKELE
 # @Time:        27/09/2022 15:41
 import abc
-from Classes.Abstract.Beverage import Beverage
+from Classes.Abstract.Beverage import Beverage, Size
 
 
 class CondimentDecorator(Beverage):
@@ -15,3 +15,6 @@ class CondimentDecorator(Beverage):
         raise NotImplementedError(
             "The getDescription() not implemented in a class that implements CondimentDecorator Class"
         )
+
+    def getSize(self) -> Size:
+        return self.beverage.getSize()
