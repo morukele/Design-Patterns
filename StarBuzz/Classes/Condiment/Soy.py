@@ -15,11 +15,12 @@ class Soy(CondimentDecorator):
         return self.beverage.getDescription() + ", Soy"
 
     def cost(self) -> float:
-        if self.beverage.getSize() == Size.TALL:
-            return self.beverage.cost() + .10
-
-        if self.beverage.getSize() == Size.GRANDE:
-            return self.beverage.cost() + .15
-
-        if self.beverage.getSize() == Size.VENTI:
-            return self.beverage.cost() + .20
+        cost: float = self.beverage.cost()
+        size: Size = self.beverage.getSize()
+        if size == Size.TALL:
+            cost += .10
+        elif size == Size.GRANDE:
+            cost += .15
+        elif size == Size.VENTI:
+            cost += .20
+        return cost

@@ -28,4 +28,6 @@ class Beverage:
 
     @abc.abstractmethod
     def cost(self) -> float:
-        raise NotImplementedError
+        raise NotImplementedError(
+            "The cost() is not implemented in a class that implement Beverage class"
+        )

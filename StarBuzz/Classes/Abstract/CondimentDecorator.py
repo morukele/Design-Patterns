@@ -12,4 +12,6 @@ class CondimentDecorator(Beverage):
 
     @abc.abstractmethod
     def getDescription(self) -> str:
-        raise NotImplementedError
+        raise NotImplementedError(
+            "The getDescription() not implemented in a class that implements CondimentDecorator Class"
+        )

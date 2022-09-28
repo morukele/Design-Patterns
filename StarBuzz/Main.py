@@ -13,8 +13,8 @@ from Classes.Abstract.Beverage import Size
 
 
 def main():
-    espresso = Espresso()
-    print(espresso.getDescription() + " $" + str(espresso.cost()))
+    beverage1 = Espresso()
+    print(beverage1.getDescription() + " $" + str(beverage1.cost()))
 
     beverage2 = DarkRoast()
     beverage2 = Mocha(beverage2)
