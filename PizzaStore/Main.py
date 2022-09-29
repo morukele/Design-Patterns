@@ -3,15 +3,20 @@
 # @Filename:    Main
 # @Author:      Oghenemarho ORUKELE
 # @Time:        28/09/2022 14:37
-from Client.PizzaStore import PizzaStore
-from Classes.Factory.SimplePizzaFactory import SimplePizzaFactory
+from Classes.Abstract.PizzaStore import PizzaStore
+from Client.ChicagoPizzaStore import ChicagoPizzaStore
+from Client.NYPizzaStore import NYPizzaStore
+
 
 def main():
-    factory = SimplePizzaFactory()
-    pizzaStore = PizzaStore(factory)
-    pizzaStore.orderPizza("cheese")
-    print("--------- Next Order ---------")
-    pizzaStore.orderPizza("veggie")
+    nyStore = NYPizzaStore()
+    chicagoStore = ChicagoPizzaStore()
+
+    pizza = nyStore.orderPizza("cheese")
+    print("Ethan ordered a " + pizza.getName() + "\n")
+
+    pizza = chicagoStore.orderPizza("cheese")
+    print("Joel ordered a " + pizza.getName() + "\n")
 
 
 if __name__ == "__main__":

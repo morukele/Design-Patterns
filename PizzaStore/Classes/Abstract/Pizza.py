@@ -5,20 +5,35 @@
 # @Time:        28/09/2022 14:58
 import abc
 
+from typing import List
 
-class Pizza:
-    @abc.abstractmethod
+
+class Pizza(abc.ABC):
+    def __init__(self):
+        self.name: str = str()
+        self.dough: str = str()
+        self.sauce: str = str()
+        self.toppings: List[str] = list()
+
     def prepare(self):
-        raise NotImplementedError
+        print("Preparing " + self.name)
+        print("Tossing dough...")
+        print("Adding sauce...")
+        print("Adding toppings: ")
 
-    @abc.abstractmethod
-    def bake(self):
-        raise NotImplementedError
+        for topping in self.toppings:
+            print(" " + topping)
 
-    @abc.abstractmethod
+    @staticmethod
+    def bake():
+        print("Bake for 25 minutes at 350")
+
     def cut(self):
-        raise NotImplementedError
+        print("Cutting the pizza into diagonal slices")
 
-    @abc.abstractmethod
-    def box(self):
-        raise NotImplementedError
+    @staticmethod
+    def box():
+        print("Place pizza in official PizzaStore Box")
+
+    def getName(self) -> str:
+        return self.name
